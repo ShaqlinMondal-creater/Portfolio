@@ -1,0 +1,163 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main{
+    height: 100%;
+    width:100%;
+    /* position: relative; */
+}
+.nav{
+    height: 75px;
+    width: 100%-100px;
+    background-color: rgb(241, 246, 244);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;  
+    border-bottom: 2px solid #dadada;
+    /* up-down=0 rig-lef=3vw */
+}
+ .nav-part2{
+    display: flex;
+    /* justify-content: space-between;  thats not work cause there is no space */
+     gap: 4vw;
+     align-items: center;
+
+ }
+ .nav h2{
+    font-size: 3vw;
+    /* font-weight: 700; */
+
+ }
+ .nav h4{
+    font-size: 1.5vw;
+    /* font-weight: 700; */
+ }
+ .nav i{
+    font-size: 1.8vw;
+    font-weight: 800;
+    display: none;
+ }
+ .nav button{
+    font-size: 1.2vw;
+    padding: 0.7vw 1.5vw;
+    background-color: rgb(85, 157, 215);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.content{
+    height: calc(100% - 75px) ;
+    width: 100%;
+    
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 55%;
+    
+    padding: 5vw 4vw;
+}
+.left h1{
+    font-size: 4vw;
+    line-height: 4.4vw;
+}
+.left h1 span{
+    color: rgb(85, 157, 215);
+}
+.left p{
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #666;
+    width: 90%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+.left p span{
+    color: rgb(85, 157, 215);
+}
+.content button{
+    font-size: 1.5vw;
+    padding: 0.8vw 1.7vw;
+    background-color: rgb(85, 157, 215);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+    
+}
+.right img{
+    height: 70%;
+    width:100%;
+    padding: 3vw 1vw;
+    
+}
+
+
+
+ @media (max-width:600px) {
+    
+    .content{
+        height: calc(100%-60px);
+        flex-direction: column;
+    }
+    .content button{
+        font-size: 4vw;
+        font-weight: 500;
+        padding: 2.5vw 4vw;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .left{
+        width: 100%;
+        height: 45%;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .left p{
+        font-size: 2.5vw;
+        width: 90%;
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+        
+    }
+    .right{
+        width: 100%;
+        height: 55%;
+    }
+    .nav{
+        /* background-color: rgb(3, 42, 29);
+        color: aliceblue; */
+        padding: 0 5vw;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 5vw;
+    }
+    .nav h4{
+        font-size: 3vw;
+        display: none;
+    }
+    .nav button{
+        display: none;
+    }
+    .nav i{
+        font-size: 3vw;
+        display: block;
+        cursor: pointer;
+    }
+ }
